@@ -22,7 +22,6 @@ public interface UserMapper {
         user.setEmail(userPostDto.getEmail());
         user.setNickname(userPostDto.getNickname());
         user.setPassword(userPostDto.getPassword());
-        user.setProfileImage(userPostDto.getProfileImage());
         user.setName(userPostDto.getName());
         user.setBirth(userPostDto.getBirth());
         user.setUserTags(userTags);
@@ -35,7 +34,6 @@ public interface UserMapper {
         User user = new User();
         user.setUserId(userPatchDto.getUserId());
         user.setNickname(userPatchDto.getNickname());
-        user.setProfileImage(userPatchDto.getProfileImage());
         user.setUserTags(userTags);
 
         return user;
